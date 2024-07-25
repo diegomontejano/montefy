@@ -1,0 +1,258 @@
+/*
+ Theme Name: Montefy
+ Theme URI: https://montefy.com
+ Author: Diego Montejano
+ Author URI: https://montefy.com
+ Description: Custom theme for WordPress and WooCommerce
+ Version: 1.0.0
+ License: Proprietary
+*/
+
+@import url('assets/fonts/fonts.css');
+@import url('assets/icons/icons.css');
+
+/* global */
+:root{
+    /* global colors */
+    --montefy-color-accent: #ff5224;
+    --montefy-color-white: #ffffff;
+    --montefy-color-black: #111111;
+    --montefy-color-gray-1: #303030;
+    --montefy-color-gray-2: #989898;
+    --montefy-color-gray-3: #dfdfdf;
+    --montefy-color-gray-4: #f3f3f3;
+    --montefy-color-gray-5: #f7f7f7;
+
+    /* global font size */
+    --montefy-font-size-13: 13px;
+    --montefy-font-size-14: 14px;
+    --montefy-font-size-15: 15px;
+    --montefy-font-size-16: 16px;
+    --montefy-font-size-17: 17px;
+    --montefy-font-size-22: 22px;
+
+    /* global font weight */
+    --montefy-font-weight-400: 400;
+    --montefy-font-weight-500: 500;
+    --montefy-font-weight-600: 600;
+    --montefy-font-weight-700: 700;
+    --montefy-font-weight-800: 800;
+
+    /* global font render */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* global font style */
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: var(--montefy-font-size-15);
+    font-weight: var(--montefy-font-weight-400); 
+    color: var(--montefy-color-gray-1);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* tags */
+h1{
+    font-size: var(--montefy-font-size-22);
+    font-weight: var(--montefy-font-weight-600);
+}
+
+h2{
+    font-size: var(--montefy-font-size-17);
+    font-weight: var(--montefy-font-weight-600);
+}
+
+h3{
+    font-size: var(--montefy-font-size-16);
+    font-weight: var(--montefy-font-weight-600);
+}
+
+h4{
+    font-size: var(--montefy-font-size-15);
+    font-weight: var(--montefy-font-weight-600);
+}
+
+a{
+    text-decoration: none;
+    font-weight: var(--montefy-font-weight-500);
+    color: var(--montefy-color-accent);
+}
+
+i{
+    font-size: 30px;
+    line-height: 1;
+}
+
+ul, li{
+    list-style: none;
+}
+
+img{
+    border-radius: 6px;
+}
+
+/* top bar */
+.montefy-top-bar{
+    width: 100%;
+    background-color: var(--montefy-color-white);
+    border-bottom: solid  1px var(--montefy-color-gray-4);
+}
+
+.montefy-top-bar-content{
+    height: 30px;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    margin: 0 auto;
+}
+
+/* header */
+.montefy-header{
+    width: 100%;
+    background-color: var(--montefy-color-white);
+    border-bottom: solid  1px var(--montefy-color-gray-4);
+}
+
+.montefy-header-content{
+    height: 60px;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    margin: 0 auto;
+}
+
+/* content */
+.montefy-content{
+    height: auto;
+    max-width: 1140px;
+    padding: 0px 10px 0px 10px;
+    margin: 0 auto;
+}
+
+/* footer */
+.montefy-footer{
+    width: 100%;
+    background-color: var(--montefy-color-black);
+}
+
+.montefy-footer-content{
+    height: 200px;
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    margin: 0 auto;
+}
+
+/* menu */
+.montefy-menu{
+    display: flex;
+}
+
+.montefy-menu li{ 
+    padding: 0px 10px 0px 10px;
+}
+
+.montefy-menu a{
+    color: var(--montefy-color-gray-1);
+    background-color: lightpink;
+    padding: 10px;
+}
+
+@media (max-width: 768px){
+    .montefy-menu a{
+        background-color: lightblue;
+    }
+}
+
+@media (max-width: 360px){
+    .montefy-menu a{
+        background-color: lightgreen;
+    }
+}
+
+/* dynamic text */
+.montefy-dynamic-text{
+    font-size: var(--montefy-font-size-13);
+    font-weight: var(--montefy-font-weight-600);
+}
+
+/* logo */
+.montefy-logo *{
+    color: var(--montefy-color-gray-1);
+    font-size: var(--montefy-font-size-17);
+}
+
+/* icon buton */
+.montefy-icon-button{
+    font-size: 30px;
+    background-color: lightgreen;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+/* icon box */
+.montefy-icon-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;
+    background-color: gainsboro;
+}
+
+.montefy-icon-box i{
+    font-size: 50px;
+    background-color: lightblue;
+    margin-bottom: 10px;    
+}
+
+.montefy-icon-box p{
+    font-size: var(--montefy-font-size-14);
+    color: var(--montefy-color-gray-2);
+}
+
+/* carousel */
+.montefy-carousel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0px 40px 0px;
+}
+
+.montefy-carousel-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightpink;
+}
+
+.montefy-carousel-slider {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* banners grid */
+.montefy-banners-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-bottom: 40px;
+}
+
+.montefy-banners-grid img{
+    height: auto;
+    width: 100%;
+    display: block;
+}
